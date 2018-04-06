@@ -1,0 +1,55 @@
+//setting dp variable to normal
+<xsl:variable name='sample'>
+            <xsl:value-of select="dp:variable('var://context/sp/uid')"/>
+        </xsl:variable>
+		
+		//static variable
+		<xsl:variable name="at">
+       <xsl:value-of select="'OWFmMWM4MDUtY2MwMy00NjE1LWExMTUtMjA1ZDA1OTU2MjU4MDI3MjZkMDItNTZm'"/>
+    </xsl:variable>   
+	
+	//setting dp variable
+	<dp:set-variable name="'var://context/accesstoken'" value='string($actkn)'/>
+	
+	//seting servcice url
+	<dp:set-variable name="'var://service/routing-url'" value="$url"/>
+	
+	//setting url
+	 <xsl:variable name="url">
+            <xsl:value-of select="concat($access_token,'?',$grant_type,'&amp;',$client_id,'&amp;',$redirect_uri,'&amp;',$client_secret,'&amp;',$code)"/>
+         </xsl:variable>
+		 
+//error log prining
+		 <xsl:message dp:priority="error">
+    <xsl:value-of select="concat('StaticCode',$code)"/>
+    </xsl:message>
+    <xsl:message dp:priority="error">
+    <xsl:value-of select="concat('URLFULL',$url)"/>
+    </xsl:message>
+	
+
+//url open
+	  <dp:url-open target="{$userurl}" response="binaryNode" http-
+  headers="$headerValues" http_method="get" ssl-
+  proxy="client:SSL_CLIENT" />
+
+////
+</xsl:variable>
+<dp:set-http-request-header name="Content-Type"
+value="application/json"/>
+<xsl:variable name="json">
+
+<xsl:value-of select="dp:decode(dp:binary-
+encode($resp/result/binary/node()),'base-64')"/>
+
+</xsl:variable>
+<xsl:copy-of select="$json"/>
+
+
+//sample db querry
+<xsl:variable name="query1">SELECT ACCESS_TOKEN FROM DB2INST1.APPDSD WHERE USER_ID='<xsl:value-of select='$uid'/>'</xsl:variable>
+        
+    <xsl:variable name="data" select="dp:sql-execute('saitejadb',$query)"/>
+
+*///////////////////////////////////////////////////////////*\
+
