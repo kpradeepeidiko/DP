@@ -23,7 +23,7 @@ session.input.readAsJSON( function ( error, json) {
 	   
 		var options = {
 			target: 'https://api.ciscospark.com/v1/messages',
-                        sslClientProfile: 'TEST_Profile',
+            sslClientProfile: 'TEST_Profile',
 			method: 'post',
 			headers: {"Authorization":accessToken,"Content-Type":"application/json"},
 			data: jsonData
