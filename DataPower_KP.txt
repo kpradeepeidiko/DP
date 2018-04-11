@@ -54,3 +54,23 @@ Multi Protocol Gateway:
 --> Whenever you want to use asynchronous communication of web-service or web-service with fire and forget scenario, in that
 	case multi protocal gateway usefull.
 
+
+	
+=======================================================================================
+Tasks in datapower:
+-------------------
+1. XML Firewall Service
+2. Multi-Protocol Gateway Service
+3. Web Service Proxy Service
+4. Service Level Monitoring
+5. Web Application Firewall Service
+6. Introduction To XSL & XML
+7. DataPower Cryptographic Tools
+8.Securing Connections Using SSL
+9. XML Threat Protection
+10. XML And Web Services Security Overview
+11. Authentication, Authorization, And Auditing
+12. Configuring LDAP Using AAA
+13. DataPower SOA Appliance Administration
+14. Problem Determination Tools And Error Handling
+15. Monitoring Objects

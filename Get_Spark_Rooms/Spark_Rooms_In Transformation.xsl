@@ -38,8 +38,6 @@
 		<xsl:message dp:priority="error">
 			..........ERROR..JSON..DATA........... 
 		</xsl:message>
-
-
     </xsl:template>
 </xsl:stylesheet>
    
