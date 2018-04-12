@@ -1,0 +1,23 @@
+Input Request:
+--------------
+<request>
+	<url>/?code=4154</url>
+	<base-url>/</base-url>
+	<args src="url">
+		<arg name="code">4154</arg>
+	</args>
+</request>
+
+
+To access "arg" value in xsl code:
+----------------------------------
+	<xsl:variable name="id">
+		<xsl:value-of select="//request/args/arg/text()"/>
+	</xsl:variable>
+	
+		(Or)
+		
+	<xsl:variable name="qcode">
+		<xsl:value-of select="//request/args/arg[@name='code']"/>
+	</xsl:variable>	
+=======================================================================================

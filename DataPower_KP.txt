@@ -1,6 +1,6 @@
 Datapower:
 --------------
-https://192.168.1.85:9090/?action=switch-domain&requestDomain=pradeep_kp
+https://192.168.1.85:9090
 
 
 Datapower Control Panel Overview:
@@ -66,7 +66,7 @@ Tasks in datapower:
 5. Web Application Firewall Service
 6. Introduction To XSL & XML
 7. DataPower Cryptographic Tools
-8.Securing Connections Using SSL
+8. Securing Connections Using SSL
 9. XML Threat Protection
 10. XML And Web Services Security Overview
 11. Authentication, Authorization, And Auditing
