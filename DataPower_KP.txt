@@ -11,18 +11,20 @@ Datapower Services:
 =====================
 1. Web Application Firewall:
 ----------------------------
---> Used to create proxy-based firewall for actual application which is running backend of any organization.
---> Suppose an application is running on backend organizational server and you want to publish your application to real-time 
-	consumers, but at the same you don't want to take risk of exposing your IP and your DNS name.So, in this case you can 
-	create a firewall(dummy IP and Port) for your backend application using Web Application Firewall.
+--> Used to create proxy-based firewall for actual application which is running backend 
+    of any organization.
+--> Suppose an application is running on backend organizational server and you want to 
+    publish your application to real-time consumers, but at the same you don't want to 
+	take risk of exposing your IP and your DNS name.So, in this case you can create a 
+	firewall(dummy IP and Port) for your backend application using Web Application Firewall.
 	
 When to use Web Servie Proxy(WSP) and XML Firewall:
 ---------------------------------------------------
 All soap WSDL have service contract, based on that server contract we invoke our logic.
 so, when we have service contract we wil choose WSP.
 
-Think about REST, REST doesn't comes with service contract, so in that case XML Firewall is the best fit.(We can also use SOAP
-but we have to have where and when we use scenarios)
+Think about REST, REST doesn't comes with service contract, so in that case XML Firewall 
+is the best fit.(We can also use SOAP but we have to have where and when we use scenarios)
 
 Both WPS and XML firewall supports HTTP and HTTPS
 
@@ -34,29 +36,42 @@ XML Firewall:
 	
 	Static-backend:
 	---------------
-	You are going to invoke datapower xml firewall which is actually having backend service running, Going to call backend 
-	service in our organization or outside of an organization.
+	You are going to invoke datapower xml firewall which is actually having backend service 
+	running, Going to call backend service in our organization or outside of an organization.
 	Example video: 
 	https://www.youtube.com/watch?v=R_DPLbK9NeE
 	
 	Loopback-Proxy:
 	---------------
-	In case if you don't have any backend service, the datapower act's as server for you, so whatever request you sending 
-	datapower receives the request and process the request and gives the response back to it.
-	
-
+	In case if you don't have any backend service, the datapower act's as server for you, 
+	so whatever request you sending datapower receives the request and process the request 
+    and gives the response back to it.
 	
 	
 Multi Protocol Gateway:
 -----------------------
 --> It provides various protocol bridging.
 --> Supports MQ, JMS,SFTP, FTP, etc
---> Whenever you want to use asynchronous communication of web-service or web-service with fire and forget scenario, in that
-	case multi protocal gateway usefull.
-
-
-	
+--> Whenever you want to use asynchronous communication of web-service or web-service with 
+    fire and forget scenario, in that case multi protocal gateway usefull.
 =======================================================================================
+Understanding/Configuring SSL Crypto Profile:
++++++++++++++++++++++++++++++++++++++++++++++
+
+SSL Directions Support:
+----------------------
+1. Forward (as Client)
+2. Reverse (as Server)
+3. Two-way (as both Client & Server)
+
+Note:
+-----
+1. If you are using "Reverse" SSL direction then you have to set "Identification Credentials".
+2. If you are using "Forward" SSL direction then you have to set "Validation Credentials".
+3. If you are using "Two-way" SSL direction then you have to set both "Identification" and 
+"Validation" Credentials.
+
+=========================================================================================
 Tasks in datapower:
 -------------------
 1. XML Firewall Service
