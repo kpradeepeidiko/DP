@@ -59,7 +59,7 @@ Understanding/Configuring SSL Crypto Profile:
 +++++++++++++++++++++++++++++++++++++++++++++
 
 SSL Directions Support:
-----------------------
+-----------------------
 1. Forward (as Client)
 2. Reverse (as Server)
 3. Two-way (as both Client & Server)
@@ -70,6 +70,30 @@ Note:
 2. If you are using "Forward" SSL direction then you have to set "Validation Credentials".
 3. If you are using "Two-way" SSL direction then you have to set both "Identification" and 
 "Validation" Credentials.
+==========================================================================================
+DataPower Crypto Graphic Tools:
+-------------------------------
+1. Create key and certificate pairs.
+2. Export and import key and certificate.
+3. Convert key and certificate to specific formats.
+
+
+Types of Keys:
+--------------
+1. RSA (Ron Rivest, Adi Shamir and Leonard Adleman)
+	
+	Key Length:
+	-----------
+	1. 1024 bits
+	2. 2048 bits
+	3. 4096 bits
+	
+	Hashing Algorithms:
+	-------------------
+	1. sha1
+	2. sha256
+	
+2. ECDSA (Elliptic Curve Digital Signature Algorithm)
 
 =========================================================================================
 Tasks in datapower:
@@ -77,12 +101,14 @@ Tasks in datapower:
 1. XML Firewall Service
 2. Multi-Protocol Gateway Service
 3. Web Service Proxy Service
-4. Service Level Monitoring
-5. Web Application Firewall Service
 6. Introduction To XSL & XML
 7. DataPower Cryptographic Tools
-8. Securing Connections Using SSL
 9. XML Threat Protection
+
+
+4. Service Level Monitoring
+5. Web Application Firewall Service
+8. Securing Connections Using SSL
 10. XML And Web Services Security Overview
 11. Authentication, Authorization, And Auditing
 12. Configuring LDAP Using AAA
