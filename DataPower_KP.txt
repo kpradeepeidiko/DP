@@ -55,7 +55,7 @@ Multi Protocol Gateway:
 --> Whenever you want to use asynchronous communication of web-service or web-service with 
     fire and forget scenario, in that case multi protocal gateway usefull.
 =======================================================================================
-Understanding/Configuring SSL Crypto Profile:
+Understanding/Configuring SSL Proxy Profile:
 +++++++++++++++++++++++++++++++++++++++++++++
 
 SSL Directions Support:
